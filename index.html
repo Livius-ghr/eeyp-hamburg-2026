@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EYP Hamburg 2026 - Shape Europe's Future | Gymnasium Grootmoor</title>
-    <meta name="description" content="Join the European Youth Parliament Hamburg 2026 at Gymnasium Grootmoor. Shape Europe's future through debate, diplomacy, and cross-cultural collaboration.">
+    <title>EEYP Hamburg 2026 - Shape Europe's Future | Gymnasium Grootmoor</title>
+    <meta name="description" content="Erasmian European Youth Parliament Hamburg 2026 at Gymnasium Grootmoor. February 5-10, 2026. Defending liberal democracy through debate and dialogue.">
     <style>
         * {
             margin: 0;
@@ -14,11 +14,11 @@
 
         :root {
             --primary-blue: #003399;
-            --secondary-yellow: #FFCC00 ;
-            --accent-teal: #00BFA6;
+            --secondary-yellow: #FFB81C;
+            --accent-teal: #00BFA5;
             --dark-gray: #2C2C2C;
             --light-gray: #F5F5F5;
-            --white: #F9FAFB;
+            --white: #FFFFFF;
         }
 
         body {
@@ -99,22 +99,6 @@
 
         .nav-links a:hover::after {
             width: 100%;
-        }
-
-        .apply-btn {
-            background: var(--secondary-yellow);
-            color: var(--dark-gray);
-            padding: 0.7rem 1.5rem;
-            border-radius: 25px;
-            font-weight: 700;
-            transition: all 0.3s;
-            border: 2px solid var(--secondary-yellow);
-        }
-
-        .apply-btn:hover {
-            background: transparent;
-            color: var(--secondary-yellow);
-            transform: translateY(-2px);
         }
 
         .mobile-menu {
@@ -258,29 +242,6 @@
             transform: translateY(-3px);
         }
 
-        .countdown {
-            margin-top: 2rem;
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-        }
-
-        .countdown-item {
-            text-align: center;
-        }
-
-        .countdown-number {
-            font-size: 3rem;
-            font-weight: 900;
-            color: var(--secondary-yellow);
-            display: block;
-        }
-
-        .countdown-label {
-            font-size: 0.9rem;
-            opacity: 0.9;
-        }
-
         .scroll-indicator {
             position: absolute;
             bottom: 2rem;
@@ -334,111 +295,42 @@
             opacity: 0.8;
         }
 
-        /* What is EYP */
-        .what-is-eyp {
+        /* What is EEYP */
+        .what-is-eeyp {
             background: var(--light-gray);
         }
 
-        .eyp-content {
+        .eeyp-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: center;
         }
 
-        .eyp-text h3 {
+        .eeyp-text h3 {
             font-size: 2rem;
             color: var(--primary-blue);
             margin-bottom: 1.5rem;
         }
 
-        .eyp-text p {
+        .eeyp-text p {
             font-size: 1.1rem;
             margin-bottom: 1.5rem;
             line-height: 1.8;
         }
 
-        .eyp-video {
+        .theme-box {
             background: linear-gradient(135deg, var(--primary-blue), var(--accent-teal));
-            border-radius: 20px;
-            aspect-ratio: 16/9;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             color: white;
-            font-size: 1.2rem;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .play-button {
-            width: 80px;
-            height: 80px;
-            background: var(--secondary-yellow);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .play-button:hover {
-            transform: scale(1.1);
-        }
-
-        .play-button::after {
-            content: '';
-            width: 0;
-            height: 0;
-            border-left: 20px solid var(--dark-gray);
-            border-top: 12px solid transparent;
-            border-bottom: 12px solid transparent;
-            margin-left: 5px;
-        }
-
-        /* Highlights */
-        .highlights-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .highlight-card {
-            background: white;
-            border-radius: 15px;
             padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            transition: all 0.3s;
-            cursor: pointer;
+            border-radius: 15px;
+            margin-top: 2rem;
         }
 
-        .highlight-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-        }
-
-        .highlight-icon {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, var(--primary-blue), var(--accent-teal));
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1.5rem;
-        }
-
-        .highlight-card h3 {
-            color: var(--primary-blue);
+        .theme-box h4 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
-        }
-
-        .highlight-card p {
-            color: var(--dark-gray);
-            opacity: 0.8;
+            color: var(--secondary-yellow);
         }
 
         /* Stats */
@@ -526,7 +418,7 @@
         }
 
         .timeline-container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
@@ -538,7 +430,7 @@
         }
 
         .timeline-date {
-            min-width: 120px;
+            min-width: 140px;
             font-weight: 700;
             color: var(--accent-teal);
             font-size: 1.1rem;
@@ -557,70 +449,77 @@
             margin-bottom: 0.5rem;
         }
 
-        /* Testimonials */
-        .testimonials {
+        .timeline-schedule {
+            margin-top: 1rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--secondary-yellow);
+        }
+
+        .schedule-item {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .schedule-time {
+            font-weight: 600;
+            color: var(--accent-teal);
+        }
+
+        .dress-code {
+            display: inline-block;
+            background: var(--secondary-yellow);
+            color: var(--dark-gray);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Locations */
+        .locations {
             background: white;
         }
 
-        .testimonials-slider {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
         }
 
-        .testimonial {
-            padding: 3rem;
+        .location-card {
+            background: var(--light-gray);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: all 0.3s;
         }
 
-        .testimonial-text {
-            font-size: 1.3rem;
-            font-style: italic;
-            color: var(--dark-gray);
-            margin-bottom: 2rem;
-            line-height: 1.8;
+        .location-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
         }
 
-        .testimonial-author {
+        .location-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-teal));
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 1rem;
-        }
-
-        .author-image {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary-blue), var(--accent-teal));
-        }
-
-        .author-info h4 {
-            color: var(--primary-blue);
-            margin-bottom: 0.2rem;
-        }
-
-        .author-info p {
-            font-size: 0.9rem;
-            opacity: 0.7;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, var(--secondary-yellow), #FFA000);
-            color: var(--dark-gray);
-            text-align: center;
-            padding: 5rem 5%;
-        }
-
-        .cta-section h2 {
-            font-size: 3rem;
             margin-bottom: 1rem;
         }
 
-        .cta-section p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
+        .location-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .location-address {
+            color: var(--dark-gray);
+            opacity: 0.8;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
         }
 
         /* Footer */
@@ -707,15 +606,7 @@
                 font-size: 1.1rem;
             }
 
-            .countdown {
-                gap: 1rem;
-            }
-
-            .countdown-number {
-                font-size: 2rem;
-            }
-
-            .eyp-content {
+            .eeyp-content {
                 grid-template-columns: 1fr;
             }
 
@@ -723,13 +614,18 @@
                 font-size: 2rem;
             }
 
-            .highlights-grid,
-            .committees-grid {
+            .committees-grid,
+            .locations-grid {
                 grid-template-columns: 1fr;
             }
 
-            .cta-section h2 {
-                font-size: 2rem;
+            .timeline-item {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .timeline-date {
+                min-width: auto;
             }
         }
 
@@ -758,15 +654,14 @@
     <nav id="navbar">
         <div class="nav-container">
             <a href="#" class="logo">
-                EYP <span class="logo-accent">Hamburg</span>
+                EEYP <span class="logo-accent">Hamburg 2026</span>
             </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#programme">Programme</a></li>
                 <li><a href="#committees">Committees</a></li>
-                <li><a href="#practical">Practical Info</a></li>
+                <li><a href="#programme">Programme</a></li>
+                <li><a href="#locations">Locations</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#apply" class="apply-btn">Apply Now</a></li>
             </ul>
             <div class="mobile-menu">
                 <span></span>
@@ -781,44 +676,29 @@
         <div class="hero-bg"></div>
         <div class="hero-content">
             <h1>
-                Shape <span class="hero-highlight">Europe's Future</span><br>
+                Defending <span class="hero-highlight">Liberal Democracy</span><br>
                 in Hamburg
             </h1>
-            <p>Join 100+ young leaders from across Europe for an unforgettable experience of debate, diplomacy, and discovery</p>
+            <p>75 Erasmian students from across Europe debating the future of democratic values</p>
             
             <div class="hero-meta">
                 <div class="hero-meta-item">
                     <svg fill="white" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
-                    February 12-16, 2026
+                    February 5-10, 2026
                 </div>
                 <div class="hero-meta-item">
                     <svg fill="white" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                    Gymnasium Grootmoor, Hamburg
+                    Hamburg, Germany
                 </div>
                 <div class="hero-meta-item">
                     <svg fill="white" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-                    5+ Countries
+                    75 Delegates
                 </div>
             </div>
 
             <div class="cta-buttons">
-                <a href="#apply" class="btn-primary">Apply as Delegate</a>
-                <a href="#about" class="btn-secondary">Learn More</a>
-            </div>
-
-            <div class="countdown">
-                <div class="countdown-item">
-                    <span class="countdown-number">112</span>
-                    <span class="countdown-label">Days</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-number">12</span>
-                    <span class="countdown-label">Hours</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-number">34</span>
-                    <span class="countdown-label">Minutes</span>
-                </div>
+                <a href="#committees" class="btn-primary">View Committees</a>
+                <a href="#programme" class="btn-secondary">See Programme</a>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -828,50 +708,31 @@
         </div>
     </section>
 
-    <!-- What is EYP -->
-    <section class="what-is-eyp" id="about">
+    <!-- What is EEYP -->
+    <section class="what-is-eeyp" id="about">
         <div class="container">
-            <div class="eyp-content">
-                <div class="eyp-text">
-                    <div class="section-label">About EYP</div>
-                    <h3>The European Youth Parliament brings together young minds to debate the future of Europe</h3>
-                    <p>Founded in 1987, EYP is one of Europe's largest platforms for political debate, intercultural encounters, and exchange among young people. Through parliamentary simulations, committee work, and engaging discussions, delegates develop critical thinking, public speaking, and diplomacy skills.</p>
-                    <p>At EYP Hamburg 2026, you'll work in committees tackling real European challenges, from climate action to digital rights. You'll draft resolutions, debate in a General Assembly, and form friendships that span the continent.</p>
-                    <a href="#programme" class="btn-primary" style="margin-top: 1rem; display: inline-block;">View Programme</a>
-                </div>
-                <div class="eyp-video">
-                    <div class="play-button"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Highlights -->
-    <section class="highlights">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">What to Expect</div>
-                <h2 class="section-title">Conference Highlights</h2>
-                <p class="section-description">Four days of intense debate, cultural exchange, and unforgettable experiences in one of Europe's most vibrant cities</p>
-            </div>
-            <div class="highlights-grid">
-                <div class="highlight-card">
-                    <div class="highlight-icon">
-                        <svg width="30" height="30" fill="white" viewBox="0 0 24 24">
-                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                        </svg>
+            <div class="eeyp-content">
+                <div class="eeyp-text">
+                    <div class="section-label">About EEYP</div>
+                    <h3>The Erasmian European Youth Parliament brings together students to defend liberal democracy</h3>
+                    <p>Building on the legacy of Desiderius Erasmus and the spirit of European humanism, EEYP Hamburg 2026 connects 75 students from Erasmian schools across Europe. Through parliamentary simulations, committee work, and engaging discussions, delegates explore how to protect and strengthen liberal democratic principles in challenging times.</p>
+                    <p>This year's session focuses on critical challenges facing European democracy—from constitutional reform to digital rights, from climate policy to international trade. You'll work in committees, draft resolutions, and debate in a General Assembly, all while upholding Erasmian values of tolerance, reasoned discourse, and humanistic dialogue.</p>
+                    <div class="theme-box">
+                        <h4>🏛️ Session Theme</h4>
+                        <p><strong>"Defending Liberal Democracy in Europe"</strong> – Exploring how the EU can protect democratic values, strengthen institutions, and respond to contemporary challenges while maintaining the principles of freedom, equality, and the rule of law.</p>
                     </div>
-                    <h3>Explore Hamburg</h3>
-                    <p>Discover Hamburg's rich culture, historic landmarks, and vibrant nightlife through organized social events.</p>
                 </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">
-                        <svg width="30" height="30" fill="white" viewBox="0 0 24 24">
-                            <path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"/>
-                        </svg>
+                <div class="eeyp-text">
+                    <div class="section-label">Key Information</div>
+                    <h3>What You Need to Know</h3>
+                    <div style="background: white; padding: 2rem; border-radius: 15px; margin-top: 1rem;">
+                        <p style="margin-bottom: 1rem;"><strong>📅 When:</strong> February 5-10, 2026</p>
+                        <p style="margin-bottom: 1rem;"><strong>📍 Where:</strong> Hamburg, Germany</p>
+                        <p style="margin-bottom: 1rem;"><strong>👥 Delegates:</strong> 75 Erasmian students</p>
+                        <p style="margin-bottom: 1rem;"><strong>🏛️ Committees:</strong> 6 specialized committees</p>
+                        <p style="margin-bottom: 1rem;"><strong>🎯 Focus:</strong> Defending liberal democracy</p>
+                        <p style="margin-bottom: 0;"><strong>🏨 Accommodation:</strong> Jugendherberge Auf dem Stintfang</p>
                     </div>
-                    <h3>Social Events</h3>
-                    <p>From the opening ceremony to the farewell party, experience memorable evenings filled with music, dancing, and celebration.</p>
                 </div>
             </div>
         </div>
@@ -882,24 +743,24 @@
         <div class="container">
             <div class="stats-grid">
                 <div class="stat-item">
-                    <span class="stat-number">150+</span>
-                    <span class="stat-label">Delegates</span>
+                    <span class="stat-number">75</span>
+                    <span class="stat-label">Erasmian Delegates</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">15</span>
-                    <span class="stat-label">Countries</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">8</span>
+                    <span class="stat-number">6</span>
                     <span class="stat-label">Committees</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">5</span>
+                    <span class="stat-number">6</span>
                     <span class="stat-label">Days</span>
                 </div>
                 <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Venues</span>
+                </div>
+                <div class="stat-item">
                     <span class="stat-number">100%</span>
-                    <span class="stat-label">Unforgettable</span>
+                    <span class="stat-label">Democratic Spirit</span>
                 </div>
             </div>
         </div>
@@ -909,9 +770,9 @@
     <section class="committees" id="committees">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">Dive Deep</div>
-                <h2 class="section-title">Committees & Topics</h2>
-                <p class="section-description">Choose from eight committees addressing the most pressing challenges facing Europe today</p>
+                <div class="section-label">Committees</div>
+                <h2 class="section-title">Defending Democracy Through Debate</h2>
+                <p class="section-description">Six committees tackling the most pressing challenges to liberal democracy in Europe</p>
             </div>
             <div class="committees-grid">
                 <div class="committee-card">
@@ -924,6 +785,7 @@
                         <p>Explore the balance between safeguarding democracy, strengthening EU institutions, and preserving member state sovereignty.</p>
                     </div>
                 </div>
+                
                 <div class="committee-card">
                     <div class="committee-header">
                         <div class="committee-code">CULT</div>
@@ -931,9 +793,10 @@
                     </div>
                     <div class="committee-body">
                         <p class="committee-topic"><strong>Topic:</strong> How can the EU strengthen education and social welfare as foundations of democracy?</p>
-                        <p>Explore how inclusive education, social security, and equal opportunities can foster democratic participation and counter the rise of anti-liberal movements.</p>
+                        <p>Explore how inclusive education, social security, and equal opportunities can foster democratic participation and counter anti-liberal movements.</p>
                     </div>
                 </div>
+
                 <div class="committee-card">
                     <div class="committee-header">
                         <div class="committee-code">INTA</div>
@@ -944,6 +807,7 @@
                         <p>Explore how democracy and human rights clauses in trade agreements can shape global governance, balance economic interests, and advance European values abroad.</p>
                     </div>
                 </div>
+
                 <div class="committee-card">
                     <div class="committee-header">
                         <div class="committee-code">AFET</div>
@@ -951,9 +815,10 @@
                     </div>
                     <div class="committee-body">
                         <p class="committee-topic"><strong>Topic:</strong> How can the EU effectively defend democracy and human rights at its external borders?</p>
-                        <p>Explore the EUs response to authoritarian regimes, the role of sanctions, and the challenges of maintaining democratic values in its neighbourhood and foreign policy.</p>
+                        <p>Explore the EU's response to authoritarian regimes, the role of sanctions, and the challenges of maintaining democratic values in its neighbourhood and foreign policy.</p>
                     </div>
                 </div>
+
                 <div class="committee-card">
                     <div class="committee-header">
                         <div class="committee-code">ENVI</div>
@@ -964,6 +829,7 @@
                         <p>Explore how environmental protection, public participation, and democratic decision-making can align to create fair and effective climate policies across Europe.</p>
                     </div>
                 </div>
+
                 <div class="committee-card">
                     <div class="committee-header">
                         <div class="committee-code">LIBE</div>
@@ -981,213 +847,4 @@
     <!-- Timeline -->
     <section class="timeline" id="programme">
         <div class="container">
-            <div class="section-header">
-                <div class="section-label">Schedule</div>
-                <h2 class="section-title">5 Days That Will Change You</h2>
-                <p class="section-description">From arrival to farewell, every moment is designed to inspire, challenge, and connect</p>
-            </div>
-            <div class="timeline-container">
-                <div class="timeline-item">
-                    <div class="timeline-date">Day 1<br>February 12</div>
-                    <div class="timeline-content">
-                        <h3>Arrival Day</h3>
-                        <p>Arrive in Hamburg, meet your delegation, get comfortable in the accommodation.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Day 2<br>February 13</div>
-                    <div class="timeline-content">
-                        <h3>Welcome & first sessions</h3>
-                        <p>Arrive at Gymnasium Grootmoor, meet your delegation, and dive into energizers that break the ice and set the tone for an incredible weekend ahead.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Day 3<br>February 14</div>
-                    <div class="timeline-content">
-                        <h3>Committee Work </h3>
-                        <p>Deep-dive into your topic with expert input. Research, debate, and collaborate with your committee members to draft resolution points.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Day 4<br>February 15</div>
-                    <div class="timeline-content">
-                        <h3>Meet the Boss</h3>
-                        <p>Get insight by speaking to experts and reviwing your own ideas.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Day 5<br>February 16</div>
-                    <div class="timeline-content">
-                        <h3>General Assembly</h3>
-                        <p>Present your committee's work in parliamentary-style debates. Defend your positions, amend resolutions, and vote on the future of Europe. Evening Eurovillage celebration!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">Hear From Alumni</div>
-                <h2 class="section-title">Life-Changing Experiences</h2>
-            </div>
-            <div class="testimonials-slider">
-                <div class="testimonial">
-                    <p class="testimonial-text">"EYP Hamburg was the most transformative experience of my teenage years. I learned to speak confidently, think critically, and see Europe through the eyes of people from different countries. The friends I made are still my closest today."</p>
-                    <div class="testimonial-author">
-                        <div class="author-image"></div>
-                        <div class="author-info">
-                            <h4>Julian S.</h4>
-                            <p>Former Delegate, Germany</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section" id="apply">
-        <div class="container">
-            <h2>Ready to Shape Europe's Future?</h2>
-            <p>Applications close January 15, 2026. Don't miss this opportunity.</p>
-            <div class="cta-buttons">
-                <a href="#" class="btn-primary" style="background: var(--primary-blue); color: white;">Apply as Delegate</a>
-                <a href="#" class="btn-secondary" style="color: var(--dark-gray); border-color: var(--dark-gray);">Download Brochure</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>EYP Hamburg 2026</h3>
-                <p>European Youth Parliament Session at Gymnasium Grootmoor</p>
-                <p style="margin-top: 1rem;">March 15-19, 2026<br>Hamburg, Germany</p>
-                <div class="social-links">
-                    <a href="#" class="social-link">
-                        <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
-                            <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-link">
-                        <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
-                            <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-link">
-                        <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
-                            <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.54-2.12-9.92-5.03-.42.72-.66 1.55-.66 2.44 0 1.67.85 3.14 2.14 4-.79-.03-1.53-.24-2.18-.61v.06c0 2.33 1.66 4.28 3.86 4.72-.4.11-.83.17-1.27.17-.31 0-.62-.03-.92-.08.62 1.94 2.42 3.35 4.56 3.39-1.67 1.31-3.78 2.09-6.07 2.09-.39 0-.78-.02-1.17-.07 2.18 1.4 4.77 2.21 7.56 2.21 9.05 0 14-7.5 14-14 0-.21 0-.42-.02-.63.96-.69 1.8-1.56 2.46-2.55z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#about">About EYP</a></li>
-                    <li><a href="#programme">Programme</a></li>
-                    <li><a href="#committees">Committees</a></li>
-                    <li><a href="#apply">Apply Now</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Practical Info</h3>
-                <ul>
-                    <li><a href="#">Accommodation</a></li>
-                    <li><a href="#">Travel & Visa</a></li>
-                    <li><a href="#">What to Bring</a></li>
-                    <li><a href="#">Hamburg Guide</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Stay Updated</h3>
-                <p>Subscribe to our newsletter for updates, deadlines, and exclusive content.</p>
-                <form style="margin-top: 1rem;">
-                    <input type="email" placeholder="Your email" style="width: 100%; padding: 0.8rem; border-radius: 5px; border: none; margin-bottom: 0.5rem;">
-                    <button type="submit" style="width: 100%; padding: 0.8rem; background: var(--secondary-yellow); border: none; border-radius: 5px; font-weight: 700; cursor: pointer;">Subscribe</button>
-                </form>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 European Youth Parliament Hamburg. All rights reserved. | Organized by Gymnasium Grootmoor | Website by Livius Espen Gahr</p>
-        </div>
-    </footer>
-
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Countdown timer (simplified)
-        function updateCountdown() {
-            const conferenceDate = new Date('2026-03-15T09:00:00');
-            const now = new Date();
-            const diff = conferenceDate - now;
-            
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            
-            document.querySelectorAll('.countdown-number')[0].textContent = days;
-            document.querySelectorAll('.countdown-number')[1].textContent = hours;
-            document.querySelectorAll('.countdown-number')[2].textContent = minutes;
-        }
-        
-        updateCountdown();
-        setInterval(updateCountdown, 60000);
-
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu').addEventListener('click', function() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-        });
-
-        // Animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.highlight-card, .committee-card, .timeline-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'all 0.6s ease-out';
-            observer.observe(el);
-        });
-    </script>
-</body>
+            <div class
